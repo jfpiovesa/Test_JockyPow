@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7264c761980ca74d91a3924245a2a20, type: 3}
+  m_Name: ApiSettings
+  m_EditorClassIdentifier: 
+  _useDevelopmentUrl: 1
+  _developmentApiUrl: http://apiserver.meu-cloud.com/api/
+  _productionApiUrl: http://apiserver.meu-cloud.com/api/
+  _requestRoutes:
+  - show: 1
+    <Request>k__BackingField: Create-room
+    <Route>k__BackingField: create-room
+  - show: 0
+    <Request>k__BackingField: Submit-choice
+    <Route>k__BackingField: game/submit-choice
+  - show: 0
+    <Request>k__BackingField: Get-Submit-Choice
+    <Route>k__BackingField: game/get-choice?roomId=1&playerName=Jogador1
+  - show: 0
+    <Request>k__BackingField: Get-Result
+    <Route>k__BackingField: game/get-result?roomId=1
+  _log: 0

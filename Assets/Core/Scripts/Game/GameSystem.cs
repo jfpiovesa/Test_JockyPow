@@ -11,6 +11,9 @@ public class GameSystem : MonoBehaviour
     private float timer;
     private bool playerHasChosen = false;
 
+
+
+    public ApiRequest apiRequest;
     private void Awake()
     {
         if (instance == null)
@@ -19,7 +22,7 @@ public class GameSystem : MonoBehaviour
         }
         else
         {
-            Destroy(this.gameObject);
+            Destroy(this);
         }
         DontDestroyOnLoad(this.gameObject);
     }

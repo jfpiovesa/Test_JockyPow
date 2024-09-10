@@ -16,6 +16,9 @@ public static class S_UiGame
 
     public static Action Reset { get; set; }
 
+
+    public static Action<string> InfoAction { get; set; }
+
     public static void SetTimer(int value)
     {
         TimeAction?.Invoke(value);
@@ -43,5 +46,10 @@ public static class S_UiGame
     public static void EndDuel(int value)
     {
         End?.Invoke(value);
+    }
+
+    public static void InfoActionSet(string value)
+    {
+        InfoAction?.Invoke(value);
     }
 }
